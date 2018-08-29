@@ -445,6 +445,34 @@ body {
 .news .new .photo {
 	margin-right:  40px;
 }
+.news .new .description:hover .title,
+.news .new .description:hover .allotment,
+.news .new .description:hover .link {
+	color: #c0301c;
+}
+.news .new .description .date {
+	display: inline-block;
+    padding: 20px;
+    border: 2px solid;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.news .new .description .date .number {
+	display: block;
+	font-size: 24px;
+	font-family: "Montserrat";
+	line-height: 20px;
+	font-weight: 600;
+}
+.news .new .description .date .month {
+	display: block;
+	font-size: 14px;
+	font-family: "Montserrat";
+	font-weight: 600;
+	text-transform: uppercase;
+}
 .news .new .description .name .title {
 	display: block;
 	font-size: 16px;
@@ -458,11 +486,14 @@ body {
 	font-family: "Roboto Slab";
 	line-height: 24px;
 	font-style: italic;
+	padding-top: 10px;
 }
 .news .new .description .text-new {
 	font-size: 14px;
 	font-family: "Roboto Slab";
 	line-height: 24px;
+	clear: left;
+	padding-bottom: 20px;
 }
 .news .new .description .link {
 	text-decoration: none;
@@ -521,4 +552,128 @@ body {
     display: inline-block;
     cursor: pointer;
     background: #c0301c;
+}
+.contact {
+	padding: 100px 215px 90px 230px;
+	
+}
+.contact .our-contacts {
+	display: block;
+	width: 250px;
+	float: left;
+	margin-right: 150px;
+}
+.contact .our-contacts .address {
+	display: inline-block;
+	width: 240px;
+	margin-bottom: 35px;
+}
+.contact .our-contacts .address .symbol {
+	float: left;
+    padding-bottom: 50px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.contact .our-contacts .address .title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "Montserrat";
+
+}
+.contact .our-contacts .address .data {
+	font-size: 12px;
+	font-family: "Roboto Slab";
+
+}
+.contact .our-contacts .address .data .text {
+	display: block;
+	font-size: 12px;
+	font-family: "Roboto Slab";
+
+}
+.contact .our-contacts .telephone {
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 35px;
+}
+.contact .our-contacts .telephone .symbol {
+	float: left;
+    padding-bottom: 50px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.contact .our-contacts .telephone .title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "Montserrat";
+}
+.contact .our-contacts .telephone .data .link {
+	color: #555555;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Roboto Slab";
+}
+.contact .our-contacts .email {
+	display: inline-block;
+	margin-bottom: 35px;		
+
+}
+.contact .our-contacts .email .symbol {
+	float: left;
+    padding-bottom: 50px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.contact .our-contacts .email .title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "Montserrat";
+}
+.contact .our-contacts .email .data .link {
+	color: #555555;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Roboto Slab";
+}
+.latter {
+	display: inline-block;
+	width: 755px;
+
+}
+#formSubscribe {
+	display: inline-block;
+}
+#formSubscribe .form {
+	width: 350px;
+	height: 40px;
+	border: 2px solid #555555;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 20px;
+	
+}
+#formSubscribe .label {
+	margin: 10px;
+    width: 90%;
+    font-size: 12px;
+    outline: none;
+	border: none;
+	font-family: "Roboto Slab";
+	text-transform: uppercase;
+
+}
+#formSubscribe .form-latter {
+	width: 728px;
+    border: 2px solid;
+	height: 100px;
+	margin-top: 15px;
+}
+#formSubscribe .form-latter .label {
+	margin: 10px;
+    width: 96%;
+    /* height: 79%; */
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-size: 12px;
 }
