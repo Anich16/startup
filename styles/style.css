@@ -146,11 +146,67 @@ body {
 .services-blok .services-list .services-item {
 	display: inline-block;
 	padding-right: 35px;
+	text-align: center;
+}
+.services-blok .services-list .services-item .item {
+	display: inline-block;
+
 }
 .services-blok .services-list .services-item:last-of-type {
 	padding-right: 0;
 }
-.services-blok .services-list .services-item .symbol-link-letter,
+.services-blok .services-list .services-item .symbol-link {
+	display: inline-block;
+    border: 3px solid #ddd;
+    padding: 15px;
+    border-radius: 100%;
+    background: #fff;
+
+}
+.services-blok .services-list .services-item .symbol-link .symbol {
+    height: 40px;
+   
+}
+.services-blok .services-list .services-item .symbol-link-white {
+	display: none;
+	border: 3px solid #ddd;
+    padding: 15px;
+    border-radius: 100%;
+    background: #c0301c;
+}
+.services-blok .services-list .services-item .symbol-link-white .symbol {
+    height: 40px;
+}
+.services-blok .services-list .services-item .item:hover .symbol-link {
+	display: none;
+}
+.services-blok .services-list .services-item .item:hover .symbol-link-white {
+	display: inline-block;
+}
+.services-blok .services-list .services-item .item .symbol-link-hooks {
+	font-weight: 900;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #c0301c;
+    border: 3px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    display: block;
+    height: 74px;
+    width: 74px;
+    font-stretch: condensed;
+    line-height: 74px;
+}
+.services-blok .services-list .services-item .item:hover .symbol-link-hooks {
+	color: #fff;
+	background: #c0301c;
+}
+
+/*.services-blok .services-list .services-item .symbol-link:hover .symbol-link-white {
+	display: inline-block;
+}*/
+/*.services-blok .services-list .services-item .symbol-link-letter,
 .services-blok .services-list .services-item .symbol-link,
 .services-blok .services-list .services-item .symbol-link-help {
 	width: 88px;
@@ -173,7 +229,7 @@ body {
 }
 .services-blok .services-list .services-item .symbol-link-help {
 	background-image: url(../images/help-red.png);
-}
+}*/
 .services-blok .services-list .services-item .title {
 	font-size: 14px;
 	font-family: "Montserrat";
@@ -390,20 +446,15 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #c0301c;
-	opacity: 0;
+	opacity: 0.6;
 	transition: all ease 0.5s;
 	display: block;
 	
 }
-.reviews:hover .saturation-red {
-	opacity: 0.6;
-}
-.reviews:hover .review {
-	display: block;
-}
+
 .reviews .review {
     text-align: center;
-    display: none;
+    display: block;
     padding: 85px 0;
     color: #fff;
     position: absolute;
@@ -513,6 +564,10 @@ body {
     height: 30px;
     justify-content: space-around;
     margin-bottom: 75px;
+}
+.brends .brend-symbols .photo {
+	height: 55px;
+    line-height: 55px
 }
 .brends .quote {
 	text-align: center;
@@ -662,6 +717,7 @@ body {
 	text-transform: uppercase;
 
 }
+
 #formSubscribe .form-latter {
 	width: 728px;
     border: 2px solid;
@@ -677,3 +733,65 @@ body {
     border: none;
     font-size: 12px;
 }
+#formSubscribe .send-button {
+	border: 2px solid;
+	margin-top: 20px;
+	display: inline-block;
+}
+#formSubscribe .send-button .button {
+	border: none;
+    background: #ffffff;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    line-height: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 40px;
+ 
+}
+#formSubscribe  .text {
+	font-size: 12px;
+	font-family: "Roboto Slab";
+	line-height: 20px;
+	display: inline-block;
+	margin-left: 40px;
+}
+#formSubscribe  .text:before {
+	content: "*";
+	color: #c0301c;
+	margin-right: 5px;
+
+}
+.footer {
+	padding: 100px 215px 5px 230px;
+	background: #c0301c;
+	color: #ffffff; 
+	margin-bottom: 50px;
+}
+.footer .section-name {
+	padding-bottom: 70px;
+	text-align: center;
+}
+.footer .section-name .section-title {
+	display: inline-block;
+	height: 35px;
+	margin: 0 auto;
+	background-image: url(../images/twitter-white.png);
+	width: 159px;
+	background-repeat: space;
+}
+.footer .section-name .section-title:after {
+	content: "";
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 64px auto;
+}
+.footer .section-name .description {
+	font-size: 12px;
+	font-family: "Roboto Slab";
+	line-height: 20px;
+	text-transform: uppercase;
+	margin-top: 54px;
