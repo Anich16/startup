@@ -37,7 +37,7 @@ body {
 	background-image: url(../images/header.jpg);
 	background-repeat: no-repeat;
 	padding: 18px 215px 0 230px;
-	height: 770px;
+	min-height: 770px;
 	background-size: 100%;
 }
 .header .logo {
@@ -130,7 +130,7 @@ body {
 	content: "";
     width: 50px;
     height: 2px;
-    background: #000000;
+    background: #555555;
     display: block;
     margin: 27px auto;
 }
@@ -222,6 +222,7 @@ body {
 .description-organization {
 	padding: 100px 215px 90px 230px;
 	position: relative;
+	background: #f8f8f8;
 }
 .description-organization .about-organization {
 	display: flex;
@@ -232,6 +233,8 @@ body {
 	font-size: 14px;
 	font-family: "Roboto Slab";
 	line-height: 24px;
+	width: 50%;
+	margin-left: 7px;
 
 }
 .workers-list {
@@ -606,10 +609,12 @@ body {
 	font-size: 14px;
 	font-family: "Montserrat";
 
+
 }
 .contact .our-contacts .address .data {
 	font-size: 12px;
 	font-family: "Roboto Slab";
+	line-height: 17px;
 
 }
 .contact .our-contacts .address .data .text {
@@ -662,24 +667,25 @@ body {
 	font-size: 12px;
 	font-family: "Roboto Slab";
 }
-.latter {
+.letter {
 	display: inline-block;
 	width: 755px;
 
 }
-#formSubscribe {
+.formSubscribe {
 	display: inline-block;
 }
-#formSubscribe .form {
+.formSubscribe .form {
 	width: 350px;
-	height: 40px;
-	border: 2px solid #555555;
 	display: inline-block;
 	margin-bottom: 15px;
 	margin-right: 20px;
 	
 }
-#formSubscribe .label {
+.formSubscribe .form .label:focus {
+	border: 2px solid #c0301c;
+}
+.formSubscribe .label {
 	margin: 10px;
     width: 90%;
     font-size: 12px;
@@ -687,30 +693,35 @@ body {
 	border: none;
 	font-family: "Roboto Slab";
 	text-transform: uppercase;
+	padding: 10px;
+	border: 2px solid #555555;
 
 }
 
-#formSubscribe .form-latter {
+.formSubscribe .form-letter {
 	width: 728px;
-    border: 2px solid;
 	height: 100px;
 	margin-top: 15px;
 }
-#formSubscribe .form-latter .label {
+.formSubscribe .form-letter .label {
 	margin: 10px;
-    width: 96%;
-    /* height: 79%; */
+    width: 95%;
+    border: 2px solid #555555;
     text-transform: uppercase;
     outline: none;
-    border: none;
+
     font-size: 12px;
 }
-#formSubscribe .send-button {
-	border: 2px solid;
-	margin-top: 20px;
-	display: inline-block;
+.formSubscribe .form-letter .label:focus {
+	border: 2px solid #c0301c;
 }
-#formSubscribe .send-button .button {
+.formSubscribe .send-button {
+	border: 2px solid;
+	margin-top: 35px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.formSubscribe .send-button .button {
 	border: none;
     background: #ffffff;
     color: #555555;
@@ -720,16 +731,19 @@ body {
     outline: none;
     cursor: pointer;
     padding: 15px 40px;
- 
 }
-#formSubscribe  .text {
+.formSubscribe .send-button .button:active {
+	background: #c0301c;
+	color: #ffffff;
+}
+.formSubscribe  .text {
 	font-size: 12px;
 	font-family: "Roboto Slab";
 	line-height: 20px;
 	display: inline-block;
 	margin-left: 40px;
 }
-#formSubscribe  .text:before {
+.formSubscribe  .text:before {
 	content: "*";
 	color: #c0301c;
 	margin-right: 5px;
@@ -767,3 +781,4 @@ body {
 	line-height: 20px;
 	text-transform: uppercase;
 	margin-top: 54px;
+}
