@@ -26,7 +26,8 @@
 
 
 body {
-	width: 1600px;
+
+	width: 100%;
 	margin: 0 auto;
 	background: #ffffff;
 	color: #555555;
@@ -37,6 +38,7 @@ body {
 	background-repeat: no-repeat;
 	padding: 18px 215px 0 230px;
 	height: 770px;
+	background-size: 100%;
 }
 .header .logo {
 	display: inline-block;
@@ -51,7 +53,7 @@ body {
 }
 .header .main-menu {
 	display: inline-block;
-	margin-left: 400px;
+	margin-left: 38%;
 
 }
 .header .main-menu .menu-list {
@@ -110,7 +112,7 @@ body {
 	color: #c0301c;
 	background: #fff;
 }
-.services-blok {
+.services-bloсk {
 	padding: 100px 215px 90px 230px;
 
 }
@@ -118,13 +120,13 @@ body {
 	padding-bottom: 70px;
 	text-align: center;
 }
-.section-name .section-title {
+.section-name .title {
 	text-transform: uppercase;
 	font-size: 20px;
 	font-family: "Montserrat";
 	
 }
-.section-name .section-title:after {
+.section-name .title:after {
 	content: "";
     width: 50px;
     height: 2px;
@@ -138,24 +140,24 @@ body {
 	
 
 }
-.services-blok .services-list {
+.services-bloсk .services-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-.services-blok .services-list .services-item {
+.services-bloсk .services-list .services-item {
 	display: inline-block;
 	padding-right: 35px;
 	text-align: center;
 }
-.services-blok .services-list .services-item .item {
+.services-bloсk .services-list .services-item .icon {
 	display: inline-block;
 
 }
-.services-blok .services-list .services-item:last-of-type {
+.services-bloсk .services-list .services-item:last-of-type {
 	padding-right: 0;
 }
-.services-blok .services-list .services-item .symbol-link {
+.services-bloсk .services-list .services-item .symbol-link {
 	display: inline-block;
     border: 3px solid #ddd;
     padding: 15px;
@@ -163,27 +165,27 @@ body {
     background: #fff;
 
 }
-.services-blok .services-list .services-item .symbol-link .symbol {
+.services-bloсk .services-list .services-item .symbol-link .symbol {
     height: 40px;
    
 }
-.services-blok .services-list .services-item .symbol-link-white {
+.services-bloсk .services-list .services-item .symbol-link-white {
 	display: none;
 	border: 3px solid #ddd;
     padding: 15px;
     border-radius: 100%;
     background: #c0301c;
 }
-.services-blok .services-list .services-item .symbol-link-white .symbol {
+.services-bloсk .services-list .services-item .symbol-link-white .symbol {
     height: 40px;
 }
-.services-blok .services-list .services-item .item:hover .symbol-link {
+.services-bloсk .services-list .services-item .icon:hover .symbol-link {
 	display: none;
 }
-.services-blok .services-list .services-item .item:hover .symbol-link-white {
+.services-bloсk .services-list .services-item .icon:hover .symbol-link-white {
 	display: inline-block;
 }
-.services-blok .services-list .services-item .item .symbol-link-hooks {
+.services-bloсk .services-list .services-item .icon .symbol-link-hooks {
 	font-weight: 900;
     font-size: 30px;
     font-family: sans-serif;
@@ -198,39 +200,12 @@ body {
     font-stretch: condensed;
     line-height: 74px;
 }
-.services-blok .services-list .services-item .item:hover .symbol-link-hooks {
+.services-bloсk .services-list .services-item .icon:hover .symbol-link-hooks {
 	color: #fff;
 	background: #c0301c;
 }
 
-/*.services-blok .services-list .services-item .symbol-link:hover .symbol-link-white {
-	display: inline-block;
-}*/
-/*.services-blok .services-list .services-item .symbol-link-letter,
-.services-blok .services-list .services-item .symbol-link,
-.services-blok .services-list .services-item .symbol-link-help {
-	width: 88px;
-	height: 90px;
-	display: block;
-	border: 3px solid #dddddd;
-	border-radius: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 45px;
-	margin: 0 auto;
-}
-.services-blok .services-list .services-item .symbol-link-letter {
-	background-image: url(../images/A-red.png);
-
-}
-.services-blok .services-list .services-item .symbol-link {
-	background-image: url(../images/icon.png);
-					  
-}
-.services-blok .services-list .services-item .symbol-link-help {
-	background-image: url(../images/help-red.png);
-}*/
-.services-blok .services-list .services-item .title {
+.services-bloсk .services-list .services-item .title {
 	font-size: 14px;
 	font-family: "Montserrat";
 	line-height: 24px;
@@ -238,7 +213,7 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
-.services-blok .services-list .services-item .text {
+.services-bloсk .services-list .services-item .text {
 	font-size: 14px;
 	font-family: "Roboto Slab";
 	line-height: 24px;
@@ -385,7 +360,7 @@ body {
 	margin-bottom: 30px;
 	position: relative;
 }
-.our-works .work-levels .level .saturation-red {
+.our-works .work-levels .level .saturation {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -396,7 +371,7 @@ body {
 	transition: all ease 0.5s;
 	display: block;
 }
-.our-works .work-levels .level:hover .saturation-red {
+.our-works .work-levels .level:hover .saturation {
 	opacity: 0.6;
 }
 .our-works .work-levels .level .continue {
@@ -438,8 +413,9 @@ body {
 	height: 365px;
 	width: 100%;
 	position: relative;
+	background-size: 100%;
 }
-.reviews .saturation-red {
+.reviews .saturation {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -555,57 +531,53 @@ body {
 	color: #555555;
 
 }
-.brends {
+.brands {
 	background: #f8f8f8;
 	padding: 110px 215px 100px 230px;
 }
-.brends .brend-symbols {
+.brands .brand-symbols {
 	display: flex;
     height: 30px;
     justify-content: space-around;
     margin-bottom: 75px;
 }
-.brends .brend-symbols .photo {
+.brands .brand-symbols .photo {
 	height: 55px;
     line-height: 55px
 }
-.brends .quote {
+.brands .quote {
 	text-align: center;
 }
-.brends .quote .text {
+.brands .quote .text {
 	font-size: 18px;
 	font-family: "Roboto Slab";
 	line-height: 30px;
 	padding: 0 175px;
 	font-style: italic;
 }
-.brends .quote .text:after,
-.brends .quote .text:before {
+.brands .quote .text:after,
+.brands .quote .text:before {
 	content:
 }
-.brends .quote .author {
+.brands .quote .author {
 	font-size: 20px;
 	font-family: "Roboto Slab";
 	line-height: 30px;
 	display: block;
 	padding-top: 10px;
 }
-.brends .digest-block {
+.brands .digest-block {
 	margin-top: 40px;
 	text-align: center;
 }
-.brends .digest-block .digest {
+.brands .digest-block .digest {
     border-radius: 100%;
     padding: 6px;
     display: inline-block;
     cursor: pointer;
     background: #dddddd;
 }
-.brends .digest-block .digest-active {
-    border-radius: 100%;
-    padding: 6px;
-    display: inline-block;
-    cursor: pointer;
+.brands .digest-block .active {
     background: #c0301c;
 }
 .contact {
@@ -767,13 +739,13 @@ body {
 	padding: 100px 215px 5px 230px;
 	background: #c0301c;
 	color: #ffffff; 
-	margin-bottom: 50px;
+	
 }
 .footer .section-name {
 	padding-bottom: 70px;
 	text-align: center;
 }
-.footer .section-name .section-title {
+.footer .section-name .title {
 	display: inline-block;
 	height: 35px;
 	margin: 0 auto;
@@ -781,7 +753,7 @@ body {
 	width: 159px;
 	background-repeat: space;
 }
-.footer .section-name .section-title:after {
+.footer .section-name .title:after {
 	content: "";
     width: 50px;
     height: 2px;
@@ -789,7 +761,7 @@ body {
     display: block;
     margin: 64px auto;
 }
-.footer .section-name .description {
+.footer .section-name .copyright {
 	font-size: 12px;
 	font-family: "Roboto Slab";
 	line-height: 20px;
