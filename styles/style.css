@@ -26,7 +26,7 @@
 
 
 body {
-
+	min-width: 1024px;
 	width: 100%;
 	margin: 0 auto;
 	background: #ffffff;
@@ -41,7 +41,9 @@ body {
 	background-size: 100%;
 }
 .header .logo {
-	display: inline-block;
+	display: block;
+	float: left;
+	padding-top: 10px;
 }
 .header .logo .link-logo {
 	color: #ffffff;
@@ -52,7 +54,7 @@ body {
 	text-decoration: none;
 }
 .header .main-menu {
-	display: inline-block;
+	display: block;
 	margin-left: 38%;
 
 }
@@ -77,8 +79,7 @@ body {
 }
 .header .slang {
 	color: #ffffff;
-	line-height: 24px;
-	padding-top: 205px;
+	padding-top: 15%;
 }
 .header .slang .title {
 	text-align: center;
@@ -416,7 +417,8 @@ body {
 	height: 365px;
 	width: 100%;
 	position: relative;
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .reviews .saturation {
 	position: absolute;
@@ -541,13 +543,14 @@ body {
 .brands .brand-symbols {
 	display: flex;
     height: 30px;
-    justify-content: space-around;
+   justify-content: space-around;
     margin-bottom: 75px;
 }
 .brands .brand-symbols .photo {
 	height: 55px;
-    line-height: 55px
+	line-height: 55px;
 }
+
 .brands .quote {
 	text-align: center;
 }
@@ -758,6 +761,7 @@ body {
 }
 .footer .section-name {
 	padding-bottom: 70px;
+	display: block;
 	text-align: center;
 }
 .footer .section-name .title {
